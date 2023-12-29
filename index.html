@@ -32,6 +32,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+
+
+
     <style>
 
 .glassmorphism {
@@ -47,7 +50,35 @@
   height: auto;
   display: block;
   border-radius: 10px; /* Ensure image corners match the container */
+  
 }
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 5em;
+  overflow: hidden;
+  
+}
+
+.slider {
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 8em 2em;
+  background-image: url('./img/blue.jpg'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+      background-size: cover; /* Adjust the background size as needed */
+      background-position: center; 
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+.slide img{
+    width: 100px;
+  height: 100px;
+  animation: scroll 60s linear infinite;
+}
+  
     </style>
 </head>
 
@@ -228,8 +259,8 @@
                                     <i class="fa fa-times text-white"></i>
                                 </div>
                                 <div class="ps-3">
-                                    <h4>No Hidden Cost</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <h4>Fast Delivery</h4>
+                                    <span>Every second counts; make it worth the timing</span>
                                 </div>
                                 <div class="border-end d-none d-lg-block"></div>
                             </div>
@@ -244,7 +275,7 @@
                                 </div>
                                 <div class="ps-3">
                                     <h4>Dedicated Team</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <span>We assure that we give our best</span>
                                 </div>
                                 <div class="border-end d-none d-lg-block"></div>
                             </div>
@@ -259,7 +290,7 @@
                                 </div>
                                 <div class="ps-3">
                                     <h4>24/7 Available</h4>
-                                    <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                    <span>9:00am-9:00</span>
                                 </div>
                             </div>
                         </div>
@@ -638,9 +669,70 @@
     </div> -->
     <!-- Team End -->
 
+     <h2 style="text-align: center; margin-top: 50px;">Our Clients</h2>
+
+    <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="./img/11.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/12.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/13.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/14.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/15.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/16.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/17.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/18.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/19.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/20.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="./img/21.png" alt="">
+          </div>
+          <!-- <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+          </div> -->
+        </div>
+      </div>
+
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Testimonial</p>
@@ -697,7 +789,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -793,6 +885,30 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+    </script>
 </body>
 
 </html>

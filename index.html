@@ -36,6 +36,15 @@
 
 
     <style>
+        @media only screen and (max-width: 767px){
+            .h-logo{
+                height: auto;
+                max-width: 70%;
+            }
+            .h-content{
+                margin-top: 50px;
+            }
+        }
 
 .glassmorphism {
   background: rgba(255, 255, 255, 0.2);
@@ -107,13 +116,8 @@
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-               <img src="./img/blue landscape.png" alt="" style="height: 100px; @media(max-width: 600px) {
-                img {
-                  height: 10px; 
-                  width: auto; 
-                }
-              }"> 
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0 h-logo">
+               <img src="./img/blue landscape.png" alt="" style="height: 100px;"> 
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -167,9 +171,8 @@
                       <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-lg-8">
-                                    <p
-                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                <div class="col-lg-8 h-content">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                                         Welcome to Tecnavis</p>
                                     <h1 class="display-1 mb-4 animated slideInDown">Empowering Your Digital Journey 
                                     </h1>
@@ -184,9 +187,8 @@
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-lg-7">
-                                    <p
-                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                <div class="col-lg-8 h-content">
+                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
                                         Welcome to Tecnavis</p>
                                     <h1 class="display-1 mb-4 animated slideInDown"> Innovative Online Solutions</h1>
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>

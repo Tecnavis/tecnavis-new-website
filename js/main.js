@@ -113,3 +113,21 @@
     
 })(jQuery);
 
+
+$("#contact-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbxzVnchDYTmNJ7m20Sld1MEvZNcuj0nNfKxbOupNZ1LhmAtZOCTr7skGEga2mDPOFnnow/exec",
+        data:$("#contact-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+            //window.location.href="https://google.com"
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})

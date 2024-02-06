@@ -1,136 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Tecnavis</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/logo black.png" rel="icon">
+    <link href="img/logo black.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-
-
+    <link href="css/style.css" rel="stylesheet" />
 
     <style>
-        @media only screen and (max-width: 767px){
-            .h-logo{
-                height: auto;
-                max-width: 70%;
-            }
-            .h-content{
-                margin-top: 50px;
-            }
-        }
+              .feedback {
+                background: #355efc;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 84px;
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 46px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
 
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(30px);
-  border-radius: 10px;
-  padding: 20px;
-  /* You can adjust these values to achieve the desired effect */
-}
+      }
 
-.w-100 {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px; /* Ensure image corners match the container */
-  
-}
-.slider123 {
-  margin-top: 70px;
-  background-color: whitesmoke;
-  padding: 8em 2em;
-  background-image: url('./img/blue.jpg');
-  background-size: cover;
-  background-position: center;
-}
+      #mybutton {
 
-.slider123 .new-slide-track {
-  width: 100%;
-  display: flex;
-  gap: 5em;
-  overflow: hidden;
-}
+        position: fixed;
 
-@keyframes scroll {
-  0% {transform: translateX(0);}
-  100% {transform: translateX(-1000%);}
-}
+          right: 30px;
+          bottom: 60px;
+          z-index: 99;
+      }
 
-.slider123 .new-slide img {
-  width: 200px;
-  height: 200px;
-  animation: scroll 60s linear infinite;
-}
 
+
+      
+              @media only screen and (max-width: 767px){
+                  .h-logo{
+                      height: auto;
+                      max-width: 70%;
+                  }
+                  .h-content{
+                      margin-top: 50px;
+                  }
+              }
+
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(30px);
+        border-radius: 10px;
+        padding: 20px;
+        /* You can adjust these values to achieve the desired effect */
+      }
+
+      .w-100 {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px; /* Ensure image corners match the container */
+
+      }
+      .slider123 {
+        margin-top: 70px;
+        background-color: whitesmoke;
+        padding: 8em 2em;
+        background-image: url('./img/blue.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .slider123 .new-slide-track {
+        width: 100%;
+        display: flex;
+        gap: 5em;
+        overflow: hidden;
+      }
+
+      @keyframes scroll {
+        0% {transform: translateX(0);}
+        100% {transform: translateX(-1000%);}
+      }
+
+      .slider123 .new-slide img {
+        width: 200px;
+        height: 200px;
+        animation: scroll 60s linear infinite;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    Down Hill, Malappuram ,
-                    Kerala - 676505</small>
-                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>Mon-Sat9:30 AM - 6:00 PM</small>
-            </div>
-            <div class="col-lg-6 px-5 text-end">
-                <small><i class="fa fa-envelope text-primary me-2"></i>info@tecnavis.com</small>
-                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+91 6282414031</small>
-            </div>
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    ><b>
+      <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+        <div class="col-lg-6 px-5 text-start">
+          <small
+            ><i class="fa fa-map-marker-alt text-primary me-2"></i> Down Hill,
+            Malappuram , Kerala - 676505</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-clock text-primary me-2"></i>Mon-Sat 9:30 AM - 6:00
+            PM</small
+          >
         </div>
+        <div class="col-lg-6 px-5 text-end">
+          <small
+            ><i class="fa fa-envelope text-primary me-2"></i
+            >info@tecnavis.com</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-phone-alt text-primary me-2"></i>+91
+            6282414031</small
+          >
+        </div>
+      </div></b>
 
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0 h-logo">
-               <img src="./img/blue landscape.png" alt="" style="height: 100px;"> 
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <!-- <a href="project.html" class="nav-item nav-link">Projects</a> -->
-                   
-                    <!-- <div class="nav-item dropdown">
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0 h-logo">
+          <img src="./img/blue landscape.png" alt="" style="height: 100px" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <!-- <a href="project.html" class="nav-item nav-link">Projects</a> -->
+
+            <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu border-light m-0">
                             <a href="project.html" class="dropdown-item">Projects</a>
@@ -140,433 +199,762 @@
                             <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
                     </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61555737712713">
-                        <small class="fab fa-facebook-f text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="#">
-                        <small class="fab fa-twitter text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.linkedin.com/company/tecnavis-web-solutions-pvt-ltd/">
-                        <small class="fab fa-linkedin-in text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.instagram.com/p/CuWvDRZSDbw/">
-                        <small class="fab fa-instagram text-primary"></small>
-                    </a>
-                </div>
-                
-            </div>
-        </nav>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="d-none d-lg-flex ms-2">
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.facebook.com/profile.php?id=61555737712713"
+            >
+              <small class="fab fa-facebook-f text-primary"></small>
+            </a>
+            <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="#">
+              <small class="fab fa-twitter text-primary"></small>
+            </a>
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.linkedin.com/company/tecnavis-web-solutions-pvt-ltd/"
+            >
+              <small class="fab fa-linkedin-in text-primary"></small>
+            </a>
+            <a
+              class="btn btn-light btn-sm-square rounded-circle ms-3"
+              href="https://www.instagram.com/p/CuWvDRZSDbw/"
+            >
+              <small class="fab fa-instagram text-primary"></small>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- Navbar End -->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!-- <div class="glassmorphism"> -->
-                        <img class="w-100" src="img/women.jpg" alt="Image">
-                      <!-- </div>               -->
-                      
-                      <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-8 h-content">
-                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
-                                        Welcome to Tecnavis</p>
-                                    <h1 class="display-1 mb-4 animated slideInDown">Empowering Your Digital Journey 
-                                    </h1>
-                                    <a href="about.html" class="btn btn-primary py-3 px-5 animated slideInDown">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        id="header-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- <div class="glassmorphism"> -->
+            <img class="w-100" src="img/women.jpg" alt="Image" />
+            <!-- </div>               -->
+
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 h-content">
+                    <p
+                      class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown"
+                    >
+                      Welcome to Tecnavis
+                    </p>
+                    <h1 class="display-1 mb-4 animated slideInDown">
+                      Empowering Your Digital Journey
+                    </h1>
+                    <a
+                      href="about.html"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Know more</a
+                    >
+                  </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-8 h-content">
-                                    <p class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
-                                        Welcome to Tecnavis</p>
-                                    <h1 class="display-1 mb-4 animated slideInDown"> Innovative Online Solutions</h1>
-                                    <a href="service.html" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 h-content">
+                    <p
+                      class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown"
+                    >
+                      Welcome to Tecnavis
+                    </p>
+                    <h1 class="display-1 mb-4 animated slideInDown">
+                      Innovative Online Solutions
+                    </h1>
+                    <a
+                      href="service.html"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Explore More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <!-- Carousel End -->
 
-
     <!-- About Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-4 align-items-end mb-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" src="./img/person-using-ai-tool-job.jpg" >
+      <div class="container">
+        <div class="row g-4 align-items-end mb-4">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <img
+              class="img-fluid rounded"
+              src="./img/person-using-ai-tool-job.jpg"
+            />
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <p
+              class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+            >
+              About Us
+            </p>
+            <h2 class="display-5 mb-4">Client Empowerment</h2>
+            <p class="mb-4">
+              create a digital identity for your business Budget-friendly, our
+              team experts will navigate your business to next level. We are a
+              leading website and app development company dedicated to
+              delivering innovative and high-quality solutions. With a skilled
+              team of experts, we strive to create user-friendly interfaces,
+              robust functionalities, and scalable systems. Our passion for
+              technology and commitment to client satisfaction drives our
+              success in the digital world.
+            </p>
+            <div class="border rounded p-4">
+              <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link fw-semi-bold active"
+                    id="nav-story-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-story"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-story"
+                    aria-selected="true"
+                  >
+                    Story
+                  </button>
+                  <button
+                    class="nav-link fw-semi-bold"
+                    id="nav-mission-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-mission"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-mission"
+                    aria-selected="false"
+                  >
+                    Mission
+                  </button>
+                  <button
+                    class="nav-link fw-semi-bold"
+                    id="nav-vision-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-vision"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-vision"
+                    aria-selected="false"
+                  >
+                    Vision
+                  </button>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">About Us</p>
-                    <h2 class="display-5 mb-4">Client Empowerment</h2>
-                    <p class="mb-4">create a digital identity for your business Budget-friendly, our team experts will navigate your business to next level. We are a leading website and app development company dedicated to delivering innovative and high-quality solutions. With a skilled team of experts, we strive to create user-friendly interfaces, robust functionalities, and scalable systems. Our passion for technology and commitment to client satisfaction drives our success in the digital world.
-
-
-                    </p>
-                    <div class="border rounded p-4">
-                        <nav>
-                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                                <button class="nav-link fw-semi-bold active" id="nav-story-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-story" type="button" role="tab" aria-controls="nav-story"
-                                    aria-selected="true">Story</button>
-                                <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
-                                    aria-selected="false">Mission</button>
-                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
-                                    aria-selected="false">Vision</button>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
-                                aria-labelledby="nav-story-tab">
-                                <p>In the heart of innovation, Tecnavis was born from a passion for technology and a vision for digital transformation.</p>
-                                <p class="mb-0"> With boundless creativity and relentless dedication, Tecnavis pioneers new horizons, crafting digital solutions that redefine possibilities.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-mission" role="tabpanel"
-                                aria-labelledby="nav-mission-tab">
-                                <p>Empower businesses with cutting-edge digital solutions for sustained growth and success.</p>
-                                <p class="mb-0">Driven by creativity and technology, we strive to exceed expectations, delivering exceptional value and impact to our clients' endeavors.</p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                                <p>Fostering a digital landscape where creativity converges with technology, enabling limitless possibilities and shaping a connected world of innovation and progress.</p>
-                                <p class="mb-0">Guided by our vision, we aim to inspire transformative experiences, empowering individuals and businesses to thrive in an ever-evolving digital era.</p>
-                            </div>
-                        </div>
-                    </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-story"
+                  role="tabpanel"
+                  aria-labelledby="nav-story-tab"
+                >
+                  <p>
+                    In the heart of innovation, Tecnavis was born from a passion
+                    for technology and a vision for digital transformation.
+                  </p>
+                  <p class="mb-0">
+                    With boundless creativity and relentless dedication,
+                    Tecnavis pioneers new horizons, crafting digital solutions
+                    that redefine possibilities.
+                  </p>
                 </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-mission"
+                  role="tabpanel"
+                  aria-labelledby="nav-mission-tab"
+                >
+                  <p>
+                    Empower businesses with cutting-edge digital solutions for
+                    sustained growth and success.
+                  </p>
+                  <p class="mb-0">
+                    Driven by creativity and technology, we strive to exceed
+                    expectations, delivering exceptional value and impact to our
+                    clients' endeavors.
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-vision"
+                  role="tabpanel"
+                  aria-labelledby="nav-vision-tab"
+                >
+                  <p>
+                    Fostering a digital landscape where creativity converges
+                    with technology, enabling limitless possibilities and
+                    shaping a connected world of innovation and progress.
+                  </p>
+                  <p class="mb-0">
+                    Guided by our vision, we aim to inspire transformative
+                    experiences, empowering individuals and businesses to thrive
+                    in an ever-evolving digital era.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="h-100">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-times text-white"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>Fast Delivery</h4>
-                                    <span>Every second counts; make it worth the timing.</span>
-                                </div>
-                                <div class="border-end d-none d-lg-block"></div>
-                            </div>
-                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="h-100" style="padding-right: 60px;">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-users text-white"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>Dedicated Team</h4>
-                                    <span>We assure that we give our best services.</span>
-                                </div>
-                                <div class="border-end d-none d-lg-block"></div>
-                            </div>
-                            <div class="border-bottom mt-4 d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="h-100">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-phone text-white"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h4>24/7 Available</h4>
-                                    <span>Round-the clock customer support Available every day.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="border rounded p-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row g-4">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+              <div class="h-100">
+                <div class="d-flex">
+                  <div
+                    class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                  >
+                    <i class="fa fa-times text-white"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h4>Fast Delivery</h4>
+                    <span>Every second counts; make it worth the timing.</span>
+                  </div>
+                  <div class="border-end d-none d-lg-block"></div>
+                </div>
+                <div class="border-bottom mt-4 d-block d-lg-none"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+              <div class="h-100" style="padding-right: 60px">
+                <div class="d-flex">
+                  <div
+                    class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                  >
+                    <i class="fa fa-users text-white"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h4>Dedicated Team</h4>
+                    <span>We assure that we give our best services.</span>
+                  </div>
+                  <div class="border-end d-none d-lg-block"></div>
+                </div>
+                <div class="border-bottom mt-4 d-block d-lg-none"></div>
+              </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+              <div class="h-100">
+                <div class="d-flex">
+                  <div
+                    class="flex-shrink-0 btn-lg-square rounded-circle bg-primary"
+                  >
+                    <i class="fa fa-phone text-white"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h4>24/7 Available</h4>
+                    <span
+                      >Round-the clock customer support Available every
+                      day.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- About End -->
 
-
     <!-- Facts Start -->
     <div class="container-fluid facts my-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-users fa-3x text-white mb-3"></i>
-                   <div class="d-flex" style="justify-content: center;"><h1 class="display-4 text-white" data-toggle="counter-up">100</h1> <h1 class="display-4 text-white">+</h1></div> 
-                    <span class="fs-5 text-white">Happy Clients</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-check fa-3x text-white mb-3"></i>
-                    <div class="d-flex" style="justify-content: center;"><h1 class="display-4 text-white" data-toggle="counter-up">120</h1> <h1 class="display-4 text-white">+</h1></div> 
-                    <span class="fs-5 text-white">Successful Projects</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                    <div class="d-flex" style="justify-content: center;"><h1 class="display-4 text-white" data-toggle="counter-up">50</h1> <h1 class="display-4 text-white">+</h1></div> 
-                    <span class="fs-5 text-white">Revenue enabled for client</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
-                <div class="col-sm-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-award fa-3x text-white mb-3"></i>
-                    <div class="d-flex" style="justify-content: center;"><h1 class="display-4 text-white" data-toggle="counter-up">2</h1> <h1 class="display-4 text-white">+</h1></div> 
-                    <span class="fs-5 text-white">years of experience</span>
-                    <hr class="bg-white w-25 mx-auto mb-0">
-                </div>
+      <div class="container py-5">
+        <div class="row g-5">
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <i class="fa fa-users fa-3x text-white mb-3"></i>
+            <div class="d-flex" style="justify-content: center">
+              <h1 class="display-4 text-white" data-toggle="counter-up">100</h1>
+              <h1 class="display-4 text-white">+</h1>
             </div>
+            <span class="fs-5 text-white">Happy Clients</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <i class="fa fa-check fa-3x text-white mb-3"></i>
+            <div class="d-flex" style="justify-content: center">
+              <h1 class="display-4 text-white" data-toggle="counter-up">120</h1>
+              <h1 class="display-4 text-white">+</h1>
+            </div>
+            <span class="fs-5 text-white">Successful Projects</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+            <div class="d-flex" style="justify-content: center">
+              <h1 class="display-4 text-white" data-toggle="counter-up">50</h1>
+              <h1 class="display-4 text-white">+</h1>
+            </div>
+            <span class="fs-5 text-white">Revenue enabled for client</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+          <div
+            class="col-sm-6 col-lg-3 text-center wow fadeIn"
+            data-wow-delay="0.7s"
+          >
+            <i class="fa fa-award fa-3x text-white mb-3"></i>
+            <div class="d-flex" style="justify-content: center">
+              <h1 class="display-4 text-white" data-toggle="counter-up">2</h1>
+              <h1 class="display-4 text-white">+</h1>
+            </div>
+            <span class="fs-5 text-white">years of experience</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
         </div>
+      </div>
     </div>
     <!-- Facts End -->
 
-
     <!-- Features Start -->
     <div class="container-xxl feature py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Why Choosing Us!</p>
-                    <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
-                    <p class="mb-4">With over 5 years of experience in software consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.
-                    </p>
-                    <a class="btn btn-primary py-3 px-5" href="">GET A QUOTE</a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="feature-box border rounded p-4">
-                                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">INNOVATIVE SOLUTIONS</h4>
-                                        <p class="mb-3">Our services and solutions are built on business innovations.</p>
-                                        <a class="fw-semi-bold" href="service.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4">
-                                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                        <h4 class="mb-3">STRATEGIC THINKING</h4>
-                                        <p class="mb-3">Tecnavis works strategically to forge the best path for your business.</p>
-                                        <a class="fw-semi-bold" href="service.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="feature-box border rounded p-4">
-                                <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                <h4 class="mb-3">EXPERIENCED TEAM</h4>
-                                <p class="mb-3">We employ the enthusiastic and experienced individual.</p>
-                                <a class="fw-semi-bold" href="service.html">Read More <i class="fa fa-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p
+              class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+            >
+              Why Choosing Us!
+            </p>
+            <h1 class="display-5 mb-4">Few Reasons Why People Choosing Us!</h1>
+            <p class="mb-4">
+              With over 5 years of experience in software consulting, we have a
+              lot to offer to our clients. Here are some reasons why companies
+              worldwide choose us.
+            </p>
+            <a class="btn btn-primary py-3 px-5" href="">GET A QUOTE</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">INNOVATIVE SOLUTIONS</h4>
+                      <p class="mb-3">
+                        Our services and solutions are built on business
+                        innovations.
+                      </p>
+                      <a class="fw-semi-bold" href="service.html"
+                        >Read More <i class="fa fa-arrow-right ms-1"></i
+                      ></a>
                     </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">STRATEGIC THINKING</h4>
+                      <p class="mb-3">
+                        Tecnavis works strategically to forge the best path for
+                        your business.
+                      </p>
+                      <a class="fw-semi-bold" href="service.html"
+                        >Read More <i class="fa fa-arrow-right ms-1"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                <div class="feature-box border rounded p-4">
+                  <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3">EXPERIENCED TEAM</h4>
+                  <p class="mb-3">
+                    We employ the enthusiastic and experienced individual.
+                  </p>
+                  <a class="fw-semi-bold" href="service.html"
+                    >Read More <i class="fa fa-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Features End -->
 
-
     <!-- Service Start -->
     <div class="container-xxl service py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Services</p>
-                <h1 class="display-5 mb-5">
-                    Find The Service For Your Business</h1>
-            </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>WEBSITES</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>E-COMMERCE</h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>APP DEVELOPMENT
-                            </h5>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                            <h5 class="m-0"><i class="fa fa-bars text-primary me-3"></i>DIGITAL MARKETING</h5>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/medium-shot-woman-working-laptop.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">Accelerate Your Business: Cutting-edge Solutions on a Budget!</h3>
-                                    <p class="mb-4">Empower Your Business with Our Innovative Solutions! As a leading website and app development company, we specialize in delivering high-quality, budget-friendly solutions. Our skilled experts focus on user-friendly interfaces, robust functionalities, and scalable systems. Our passion for technology and client satisfaction drives success in the digital realm.</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Responsive Design</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>User-Friendly Navigation</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Visual Appeal and Branding</p>
-                                    <a href="service.html" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/corporate-management-strategy-solution-branding-concept.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">Accelerate Your Business: Cutting-edge Solutions on a Budget!</h3>
-                                    <p class="mb-4">"Shop smarter, shop easier. Explore a world of convenience with our diverse online marketplace. Discover trending products, exclusive deals, and seamless shopping at your fingertips. Welcome to hassle-free online shopping!"</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Secure Payment Gateway</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Product Catalog and Search Functionality</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i> Mobile Optimization</p>
-                                    <a href="service.html" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/high-angle-hands-holding-paper.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">Accelerate Your Business: Cutting-edge Solutions on a Budget!</h3>
-                                    <p class="mb-4">"Crafting innovative apps for a seamless digital experience. Transforming ideas into user-friendly solutions that redefine convenience. Welcome to the future of app development."</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>User Experience (UX) Design</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Performance and Functionality</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Security and Data Protection</p>
-                                    <a href="service.html" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-4">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute rounded w-100 h-100" src="img/full-shot-woman-online-fashion-shopping (1).jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-4">Accelerate Your Business: Cutting-edge Solutions on a Budget!</h3>
-                                    <p class="mb-4">"Empowering businesses through strategic digital marketing. Elevating brands, expanding reach, and maximizing impact in the digital landscape. Welcome to the forefront of effective marketing strategies."</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Content Marketing</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Search Engine Optimization (SEO)</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>Social Media Marketing</p>
-                                    <a href="service.html" class="btn btn-primary py-3 px-5 mt-3">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <p
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+            Our Services
+          </p>
+          <h1 class="display-5 mb-5">Find The Service For Your Business</h1>
         </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-4">
+            <div
+              class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4"
+            >
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-1"
+                type="button"
+              >
+                <h5 class="m-0">
+                  <i class="fa fa-bars text-primary me-3"></i>WEBSITES
+                </h5>
+              </button>
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-2"
+                type="button"
+              >
+                <h5 class="m-0">
+                  <i class="fa fa-bars text-primary me-3"></i>E-COMMERCE
+                </h5>
+              </button>
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-3"
+                type="button"
+              >
+                <h5 class="m-0">
+                  <i class="fa fa-bars text-primary me-3"></i>APP DEVELOPMENT
+                </h5>
+              </button>
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-4"
+                type="button"
+              >
+                <h5 class="m-0">
+                  <i class="fa fa-bars text-primary me-3"></i>DIGITAL MARKETING
+                </h5>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content w-100">
+              <div class="tab-pane fade show active" id="tab-pane-1">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute rounded w-100 h-100"
+                        src="img/medium-shot-woman-working-laptop.jpg"
+                        style="object-fit: cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-4">
+                      Accelerate Your Business: Cutting-edge Solutions on a
+                      Budget!
+                    </h3>
+                    <p class="mb-4">
+                      Empower Your Business with Our Innovative Solutions! As a
+                      leading website and app development company, we specialize
+                      in delivering high-quality, budget-friendly solutions. Our
+                      skilled experts focus on user-friendly interfaces, robust
+                      functionalities, and scalable systems. Our passion for
+                      technology and client satisfaction drives success in the
+                      digital realm.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Responsive
+                      Design
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>User-Friendly
+                      Navigation
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Visual Appeal
+                      and Branding
+                    </p>
+                    <a
+                      href="service.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-2">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute rounded w-100 h-100"
+                        src="img/corporate-management-strategy-solution-branding-concept.jpg"
+                        style="object-fit: cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-4">
+                      Accelerate Your Business: Cutting-edge Solutions on a
+                      Budget!
+                    </h3>
+                    <p class="mb-4">
+                      "Shop smarter, shop easier. Explore a world of convenience
+                      with our diverse online marketplace. Discover trending
+                      products, exclusive deals, and seamless shopping at your
+                      fingertips. Welcome to hassle-free online shopping!"
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Secure
+                      Payment Gateway
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Product
+                      Catalog and Search Functionality
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i> Mobile
+                      Optimization
+                    </p>
+                    <a
+                      href="service.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-3">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute rounded w-100 h-100"
+                        src="img/high-angle-hands-holding-paper.jpg"
+                        style="object-fit: cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-4">
+                      Accelerate Your Business: Cutting-edge Solutions on a
+                      Budget!
+                    </h3>
+                    <p class="mb-4">
+                      "Crafting innovative apps for a seamless digital
+                      experience. Transforming ideas into user-friendly
+                      solutions that redefine convenience. Welcome to the future
+                      of app development."
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>User
+                      Experience (UX) Design
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Performance
+                      and Functionality
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Security and
+                      Data Protection
+                    </p>
+                    <a
+                      href="service.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab-pane-4">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute rounded w-100 h-100"
+                        src="img/full-shot-woman-online-fashion-shopping (1).jpg"
+                        style="object-fit: cover"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-4">
+                      Accelerate Your Business: Cutting-edge Solutions on a
+                      Budget!
+                    </h3>
+                    <p class="mb-4">
+                      "Empowering businesses through strategic digital
+                      marketing. Elevating brands, expanding reach, and
+                      maximizing impact in the digital landscape. Welcome to the
+                      forefront of effective marketing strategies."
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Content
+                      Marketing
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Search Engine
+                      Optimization (SEO)
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-primary me-3"></i>Social Media
+                      Marketing
+                    </p>
+                    <a
+                      href="service.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Service End -->
 
-
     <!-- Callback Start -->
     <div class="container-fluid callback my-5 pt-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                            <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Get In Touch
-                            </p>
-                            <h1 class="display-5 mb-5">Request A Call-Back</h1>
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                    <label for="mail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div
+              class="bg-white border rounded p-4 p-sm-5 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div
+                class="text-center mx-auto wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px"
+              >
+                <p
+                  class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+                >
+                  Get In Touch
+                </p>
+                <h1 class="display-5 mb-5">Request A Call-Back</h1>
+              </div>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                    <label for="name">Your Name</label>
+                  </div>
                 </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mail"
+                      placeholder="Your Email"
+                    />
+                    <label for="mail">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile"
+                      placeholder="Your Mobile"
+                    />
+                    <label for="mobile">Your Mobile</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a message here"
+                      id="message"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Submit Now
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Callback End -->
-
-
-
 
     <!-- Team Start -->
     <!-- <div class="container-xxl py-5">
@@ -626,58 +1014,52 @@
     </div> -->
     <!-- Team End -->
 
-     <h2 style="text-align: center; margin-top: 50px;">Our Clients</h2>
+    <h2 style="text-align: center; margin-top: 50px">Our Clients</h2>
 
-
-     <div class="slider123">
-        <div class="new-slide-track">
-            
-          <div class="new-slide">
-            <img src="./img/11.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/12.png" alt="">
-          </div>
-          
-          <div class="new-slide">
-            <img src="./img/14.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/15.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/16.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/17.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/18.png" alt="">
-          </div>
-          
-          <div class="new-slide">
-            <img src="./img/20.png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/22 (1).png" alt="">
-          </div>
-          
-          <div class="new-slide">
-            <img src="./img/22 (2).png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/22 (3).png" alt="">
-          </div>
-          <div class="new-slide">
-            <img src="./img/22 (4).png" alt="">
-          </div>
-          <!-- Add other slides here with the new class name -->
+    <div class="slider123">
+      <div class="new-slide-track">
+        <div class="new-slide">
+          <img src="./img/11.png" alt="" />
         </div>
+        <div class="new-slide">
+          <img src="./img/12.png" alt="" />
+        </div>
+
+        <div class="new-slide">
+          <img src="./img/14.png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/15.png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/16.png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/17.png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/18.png" alt="" />
+        </div>
+
+        <div class="new-slide">
+          <img src="./img/20.png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/22 (1).png" alt="" />
+        </div>
+
+        <div class="new-slide">
+          <img src="./img/22 (2).png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/22 (3).png" alt="" />
+        </div>
+        <div class="new-slide">
+          <img src="./img/22 (4).png" alt="" />
+        </div>
+        <!-- Add other slides here with the new class name -->
       </div>
-      
-
-   
-
+    </div>
 
     <!-- Testimonial Start -->
     <!-- <div class="container-xxl py-5">
@@ -740,81 +1122,128 @@
     </div> -->
     <!-- Testimonial End -->
 
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
+    <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Our Office</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>
 
-                       
-                        Down Hill, Malappuram ,
-                        Kerala    
-                        </p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6282414031</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@tecnavis.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61555737712713"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.linkedin.com/company/tecnavis-web-solutions-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2" href="https://www.instagram.com/p/CuWvDRZSDbw/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="#website">Website</a>
-                    <a class="btn btn-link" href="service.html">E commerce</a>
-                    <a class="btn btn-link" href="service.html">App development</a>
-                    <a class="btn btn-link" href="service.html">Digital marketing</a>
-                    <a class="btn btn-link" href="service.html">Business Analysis</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Our Services</a>
-                    <a class="btn btn-link" href="about.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="about.html">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Newsletter</h4>
-                    <p>Explore. Experience. Evolve..</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+              Down Hill, Malappuram , Kerala
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+91 6282414031
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>info@tecnavis.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.facebook.com/profile.php?id=61555737712713"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.linkedin.com/company/tecnavis-web-solutions-pvt-ltd/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href="https://www.instagram.com/p/CuWvDRZSDbw/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Services</h4>
+            <a class="btn btn-link" href="#website">Website</a>
+            <a class="btn btn-link" href="service.html">E commerce</a>
+            <a class="btn btn-link" href="service.html">App development</a>
+            <a class="btn btn-link" href="service.html">Digital marketing</a>
+            <a class="btn btn-link" href="service.html">Business Analysis</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-link" href="service.html">Our Services</a>
+            <a class="btn btn-link" href="about.html">Terms & Condition</a>
+            <a class="btn btn-link" href="about.html">Support</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-4">Newsletter</h4>
+            <p>Explore. Experience. Evolve..</p>
+            <div class="position-relative w-100">
+              <input
+                class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Your email"
+              />
+              <button
+                type="button"
+                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+              >
+                SignUp
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Footer End -->
+    <div id="mybutton">
+      <button class="feedback">
+        <a
+          target="_blank"
+          href="https://wa.me/919847185556?text=Hi, Iam here for a Help, Can I get an Appointment?"
+        >
+          <i class="fa fa-whatsapp" style="color: aliceblue"></i>
+        </a>
+      </button>
+    </div>
 
+    <!-- Footer End -->
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row justify-content-center"> <!-- Center align the content -->
-                <div class="col-md-6 text-center mb-3 mb-md-0"> <!-- Text center alignment -->
-                    &copy; <a class="border-bottom" href="#"> 2024. Design by Tecnavis Web Solutions Pvt Ltd</a>, All Right Reserved.
-                </div>
-                <!--  -->
-            </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Center align the content -->
+          <div class="col-md-6 text-center mb-3 mb-md-0">
+            <!-- Text center alignment -->
+            &copy;
+            <a class="border-bottom" href="#">
+              2024. Design by Tecnavis Web Solutions Pvt Ltd</a
+            >, All Right Reserved.
+          </div>
+          <!--  -->
         </div>
+      </div>
     </div>
-    
+
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
-
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -828,29 +1257,31 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
     </script>
-</body>
-
+  </body>
 </html>

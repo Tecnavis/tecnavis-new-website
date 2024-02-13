@@ -42,20 +42,24 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <style>
-              .feedback {
-                background: #355efc;
+              
+              
+    .feedback {
+    background: #355efc;
     height: 50px;
     width: 50px;
     right: 30px;
     bottom: 84px;
     position: fixed;
     color: #fff;
-    font-size: 25px;
+    /* font-size: 25px; */
     text-align: center;
     border-radius: 50%;
     line-height: 46px;
     border: 2px solid transparent;
-    box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  transition: all 0.1s ease;
 
       }
 
@@ -65,7 +69,7 @@
 
           right: 30px;
           bottom: 60px;
-          z-index: 99;
+          
       }
 
 
@@ -1261,19 +1265,19 @@
           target="_blank"
           href="https://wa.me/919847185556?text=Hi, Iam here for a Help, Can I get an Appointment?"
         >
-          <i class="fa fa-whatsapp" style="color: aliceblue"></i>
+          <i class="bi bi-whatsapp" style="color: aliceblue"></i>
         </a>
       </button>
     </div>
 
 <!-- chatbot -->
 <button class="chatbot-toggler">
-  <span class="material-symbols-rounded">help</span>
-  <span class="material-symbols-outlined">close</span>
+  <span class="material-symbols-rounded"><i class="bi bi-chat-dots"></i></span>
+  <span class="material-symbols-outlined"><i class="bi bi-chat-dots"></i></span>
 </button>
 <div class="chatbot">
   <header>
-    <h2>How may I lend a hand? </h2>
+    <h2 style="color: #fff;">How may I lend a hand? </h2>
     <span class="close-btn material-symbols-outlined">close</span>
   </header>
   <ul class="chatbox">
@@ -1287,8 +1291,7 @@
     <span id="send-btn" class="material-symbols-rounded">send</span>
   </div>
 </div>
-</body>
-</html>
+
 <script>
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
@@ -1393,7 +1396,7 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
     <a
       href="#"
       class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="bi bi-arrow-up"></i
+      ><i class="bi bi-arrow-up-circle"></i
     ></a>
 
     <!-- JavaScript Libraries -->

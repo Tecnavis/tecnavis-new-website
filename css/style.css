@@ -567,7 +567,7 @@ body {
   background: var(--primary);
   transition: all 0.2s ease;
   margin-right: 120px;
-  display: none;
+  /* display: none; */
 
  
   

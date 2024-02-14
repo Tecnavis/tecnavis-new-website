@@ -1285,6 +1285,10 @@
       <span class="material-symbols-outlined">smart_toy</span>
       <p>Hi there 👋<br>How can I help you today?</p>
     </li>
+    <li>
+      
+      
+    </li>
   </ul>
   <div class="chat-input">
     <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
@@ -1330,7 +1334,8 @@ fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
   messageElement.textContent = data.choices[0].message.content.trim();
 }).catch(() => {
   messageElement.classList.add("error");
-  messageElement.textContent = "Oops! Something went wrong. Please try again.";
+  messageElement.textContent = "To know more click below";
+  
 }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 const handleChat = () => {
@@ -1363,6 +1368,7 @@ if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
   e.preventDefault();
   handleChat();
 }
+
 });
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));

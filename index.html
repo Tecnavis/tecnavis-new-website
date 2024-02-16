@@ -1305,10 +1305,7 @@
       <a id="whatsappButton" class="feed" style=";" href="https://wa.me/916282414031?text=Hi,%20I%20am%20here%20for%20a%20Help,%20Can%20I%20get%20an%20Appointment?" target="_blank">
         <i class="bi bi-whatsapp" style="color: aliceblue;"></i>
         
-    </a>
-    <a href="https://wa.me/916282414031?text=Hi,%20I%20am%20here%20for%20a%20Help,%20Can%20I%20get%20an%20Appointment?"
-    target="_blank" class="btn btn-primary py-3 px-5 animated slideInDown"
-    >Click here to connect whatsapp!</a
+    
       
     </li>
   </ul>
@@ -1325,14 +1322,14 @@ const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
-let userMessage = null; // Variable to store user's message
+let   userMessage = null; // Variable to store user's message
 const API_KEY = "PASTE-YOUR-API-KEY"; // Paste your API key here
 const inputInitHeight = chatInput.scrollHeight;
 const createChatLi = (message, className) => {
 // Create a chat <li> element with passed message and className
 const chatLi = document.createElement("li");
 chatLi.classList.add("chat", `${className}`);
-let chatContent = className === "outgoing" ? `<p>Hwey hey</p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
 chatLi.innerHTML = chatContent;
 chatLi.querySelector("p").textContent = message;
 return chatLi; // return chat <li> element

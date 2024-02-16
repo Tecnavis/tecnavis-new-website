@@ -73,7 +73,23 @@
       }
 
 
-
+      .feed{
+        background: #6d87e5;
+    height: 50px;
+    width: 50px;
+    /* right: 30px; */
+    bottom: 84px;
+    position: fixed;
+    color: #fff;
+    /* font-size: 25px; */
+    text-align: center;
+    border-radius: 50%;
+    line-height: 46px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+              0 32px 64px -48px rgba(0,0,0,0.5);
+  transition: all 0.1s ease; 
+      }
       
               @media only screen and (max-width: 767px){
                   .h-logo{
@@ -1263,7 +1279,7 @@
       <button class="feedback">
         <a
           target="_blank"
-          href="https://wa.me/916282414031?text=Hi, Iam here for a Help, Can I get an Appointment?"
+          href="https://wa.me/916282414031?text=Hi, Iam here for a Help, How can i help you?"
         >
           <i class="bi bi-whatsapp" style="color: aliceblue"></i>
         </a>
@@ -1282,11 +1298,17 @@
   </header>
   <ul class="chatbox">
     <li class="chat incoming">
-      <span class="material-symbols-outlined">smart_toy</span>
+      <span class="material-symbols-rounded"><i class="bi bi-person"></i></span>
       <p>Hi there 👋<br>How can I help you today?</p>
     </li>
     <li>
-      
+      <a id="whatsappButton" class="feed" style=";" href="https://wa.me/916282414031?text=Hi,%20I%20am%20here%20for%20a%20Help,%20Can%20I%20get%20an%20Appointment?" target="_blank">
+        <i class="bi bi-whatsapp" style="color: aliceblue;"></i>
+        
+    </a>
+    <a href="https://wa.me/916282414031?text=Hi,%20I%20am%20here%20for%20a%20Help,%20Can%20I%20get%20an%20Appointment?"
+    target="_blank" class="btn btn-primary py-3 px-5 animated slideInDown"
+    >Click here to connect whatsapp!</a
       
     </li>
   </ul>
@@ -1297,6 +1319,7 @@
 </div>
 
 <script>
+ 
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
 const chatbox = document.querySelector(".chatbox");
@@ -1309,7 +1332,7 @@ const createChatLi = (message, className) => {
 // Create a chat <li> element with passed message and className
 const chatLi = document.createElement("li");
 chatLi.classList.add("chat", `${className}`);
-let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+let chatContent = className === "outgoing" ? `<p>Hwey hey</p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
 chatLi.innerHTML = chatContent;
 chatLi.querySelector("p").textContent = message;
 return chatLi; // return chat <li> element
@@ -1334,8 +1357,8 @@ fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
   messageElement.textContent = data.choices[0].message.content.trim();
 }).catch(() => {
   messageElement.classList.add("error");
-  messageElement.textContent = "To know more click below";
-  
+  messageElement.textContent = "<h2>https://wa.me/916282414031?text=Hi, Iam here for a Help, How can i help you?</h2>";
+ 
 }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 const handleChat = () => {

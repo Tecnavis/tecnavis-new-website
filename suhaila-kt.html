@@ -159,14 +159,36 @@ body{
     padding: 0 10px;
     display: inline;
 }
+
+.profile-pic {
+    /* Add any styling you need for the profile picture */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
     </style>
 </head>
 <body>
     <div id="algn">
         <div id="card">
             <div id="upper-bg">
-                <img src="./img/profiles/suhu.jpg" alt="profile-pic" class="profile-pic">
+                <img src="./img/profiles/suhu.jpg" alt="profile-pic" class="profile-pic bounce">
             </div>
+            
             <div id="lower-bg">
               <div class="text">
                 <p class="name">Suhaila kt</p>

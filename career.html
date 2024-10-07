@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,7 +31,81 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .header123 {
+        background-color: #007BFF;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .container123 {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2, h3 {
+        color: #333;
+        text-align: center; /* Center-align headings */
+    }
+    /* Job Listing Grid */
+    .job-listing123 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    /* Individual job card styling */
+    .job123 {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    /* Hover effect for modern animations */
+    .job123:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .apply-btn123 {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .apply-btn123:hover {
+        background-color: #218838;
+    }
+    .testimonials123, .benefits123 {
+        margin: 20px 0;
+    }
+    /* footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    } */
+    /* Responsive styles for smaller devices */
+    @media (max-width: 768px) {
+        .job-listing123 {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -58,7 +131,7 @@
             <div class="col-lg-6 px-5 text-end">
                 <small><i class="fa fa-envelope text-primary me-2"></i>info@tecnavis.com</small>
 
-              
+               
                 <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
             </div>
             <!-- <div class="col-lg-6 px-5 text-end">
@@ -68,6 +141,7 @@
             </div> -->
         </div>
     </b>
+
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <img src="./img/blue landscape.png" alt="" style="height: 100px;"> 
@@ -78,12 +152,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link ">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="career.html" class="nav-item nav-link">Career</a>
+                    <a href="career.html" class="nav-item nav-link active">Career</a>
                     <!-- <a href="project.html" class="nav-item nav-link">Projects</a> -->
-
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu border-light m-0">
@@ -94,7 +167,7 @@
                             <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
                     </div> -->
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://www.facebook.com/profile.php?id=61555737712713"target="_blank">
@@ -119,12 +192,12 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-4 animated slideInDown">Contact</h1>
+            <h1 class="display-3 mb-4 animated slideInDown">Career</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="service.html">services</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item active" aria-current="page">About</li>
                 </ol>
             </nav>
         </div>
@@ -132,68 +205,94 @@
     <!-- Page Header End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Contact</p>
-                    <h1 class="display-5 mb-4">If You Have Any Query, Please Contact Us</h1>
-                    <p class="mb-4">"Contact Us: Have questions, feedback, or inquiries? We're here to help! Reach out to us via phone, email, or our online contact form. Our dedicated team is ready to assist you and provide prompt responses to ensure your needs are met. Connect with us today and let's start a conversation!"
-
-
-
-
-                       
-                    <form id="contact-form" action="">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
-                    <div class="position-relative rounded overflow-hidden h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.8867002636894!2d76.06860387377887!3d11.047120654144935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64b0a6230de29%3A0x74939715906e4262!2sTecnavis%20Web%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1704183355623!5m2!1sen!2sin"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
    
-    <!-- Footer Start -->
+   
+   
+  
+    <div class="container123">
+        <!-- Why Work with Us Section -->
+        <section>
+            <h2>Why Work with Us?</h2>
+            <p>
+                At Tecnavis, we foster a collaborative environment that encourages creativity, teamwork, and innovation. We provide growth opportunities and mentorship to help you excel professionally. Working on cutting-edge IT solutions, you'll contribute to impactful projects while being part of a team that values dedication and forward-thinking ideas. Join us today!
+
+
+
+
+
+
+
+            </p>
+        </section>
+
+        <!-- Open Positions Section -->
+
+        <section>
+            <h2>Opening Positions</h2>
+            <!-- <p>At Tecnavis, we offer a collaborative work environment, growth opportunities, and a chance to work on innovative IT solutions. We value creativity, dedication, and forward-thinking ideas.</p> -->
+        </section>
+
+        <section class="job-listing123">
+            <!-- <h2>Open Positions</h2> -->
+            
+            <div class="job123">
+                <h3>Django Developer</h3>
+                <p>Location: Malappuram</p>
+                <p>Seeking a Django Developer to build scalable web applications, manage databases, and enhance backend functionality.
+                </p>
+                <a href="mailto:hr@tecnavis.com" class="apply-btn123">Apply Now</a>
+            </div>
+            <div class="job123">
+                <h3>Video Editor</h3>
+                <p>Location: Malappuram</p>
+                <p>Looking for a Video Editor to create compelling narratives through editing, enhancing footage, and adding effects.
+                </p>
+                <a href="mailto:hr@tecnavis.com" class="apply-btn123">Apply Now</a>
+            </div>
+            <!-- <div class="job123">
+                <h3>Project Manager</h3>
+                <p>Location: Kochi</p>
+                <p>Join our project management team and help coordinate IT projects and teams to deliver successful outcomes.</p>
+                <a href="mailto:hr@tecnavis.com" class="apply-btn123">Apply Now</a>
+            </div> -->
+            <!-- <div class="job123">
+                <h3>QA Tester</h3>
+                <p>Location: Remote</p>
+                <p>We are looking for a detail-oriented QA Tester to ensure the quality of our software solutions.</p>
+                <a href="mailto:hr@tecnavis.com" class="apply-btn123">Apply Now</a>
+            </div> -->
+        </section>
+
+        <!-- Employee Testimonials Section -->
+        <!-- <section class="testimonials123">
+            <h2>What Our Employees Say</h2>
+            <blockquote>
+                "Working at Tecnavis has been an amazing experience. The team is supportive, and the projects are cutting-edge."
+            </blockquote>
+            <blockquote>
+                "The growth opportunities at Tecnavis are unmatched. I have learned so much and continue to evolve in my career."
+            </blockquote>
+        </section> -->
+
+        <!-- Benefits Section -->
+        <section class="benefits123">
+            <h2>Perks and Benefits</h2>
+            <ul>
+                <!-- <li>Competitive salary package,among the best in industry</li> -->
+                <li>Dynamic and collaborative  work environment</li>
+                <li>Professional growth and Development Opportunities</li>
+                <li>Competitive Salaries and Bonuses</li>
+            </ul>
+        </section>
+
+        <!-- How to Apply Section -->
+        <section>
+            <h2>How to Apply</h2>
+            <p>Submit your resume and a brief cover letter to <a href="mailto:hr@tecnavis.com">hr@tecnavis.com</a> or click "Apply Now" under each job listing. We will review your application and get back to you shortly.</p>
+        </section>
+    </div>
+
+
     <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
@@ -225,12 +324,12 @@
                     <a class="btn btn-link" href="">Business Analysis</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Website</a>
-                    <a class="btn btn-link" href="">E commerce</a>
-                    <a class="btn btn-link" href="">App development</a>
-                    <a class="btn btn-link" href="">Digital marketing</a>
-                    <a class="btn btn-link" href="">Business Analysis</a>
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Newsletter</h4>
@@ -279,9 +378,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-   
-
 </body>
 
+</html>
+</body>
 </html>

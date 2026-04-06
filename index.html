@@ -142,6 +142,102 @@
         height: 200px;
         animation: scroll 60s linear infinite;
       }
+.client-title {
+  text-align: center;
+  margin: 60px 0 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Container */
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+/* Gradient fade edges */
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+/* Track */
+.logo-track {
+  display: flex;
+  width: calc(250px * 28); /* adjust based on logos */
+  animation: scroll 25s linear infinite;
+}
+
+/* Pause on hover */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* Logo box */
+.logo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.logo img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    width: 140px;
+  }
+
+  .logo img {
+    max-height: 100px;
+  }
+}
+
+
     </style>
   </head>
 
@@ -167,7 +263,7 @@
       <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
           <small
-            ><i class="fa fa-map-marker-alt text-primary me-2"></i> Down Hill,
+            ><i class="fa fa-map-marker-alt text-primary me-2"></i> 
             Malappuram , Kerala - 676505</small
           >
           <small class="ms-4"
@@ -1080,7 +1176,61 @@
     </div> -->
     <!-- Team End -->
 
-    <h2 style="text-align: center; margin-top: 50px">Our Clients</h2>
+<h2 class="client-title">Our Clients</h2>
+
+<div class="logo-slider">
+  <div class="logo-track">
+
+    <!-- LOGOS (duplicate for infinite effect) -->
+    <div class="logo"><img src="./img/11.png"></div>
+    <div class="logo"><img src="./img/12.png"></div>
+    <div class="logo"><img src="./img/14.png"></div>
+    <div class="logo"><img src="./img/15.png"></div>
+    <div class="logo"><img src="./img/16.png"></div>
+    <div class="logo"><img src="./img/17.png"></div>
+    <div class="logo"><img src="./img/18.png"></div>
+    <div class="logo"><img src="./img/20.png"></div>
+    <div class="logo"><img src="./img/22.png"></div>
+    <div class="logo"><img src="./img/23.png"></div>
+    <div class="logo"><img src="./img/24.png"></div>
+    <div class="logo"><img src="./img/25.png"></div>
+    <div class="logo"><img src="./img/26.png"></div>
+    <div class="logo"><img src="./img/27.png"></div>
+    <div class="logo"><img src="./img/28.png"></div>
+    <div class="logo"><img src="./img/29.png"></div>
+    <div class="logo"><img src="./img/30.png"></div>
+    <div class="logo"><img src="./img/31.png"></div>
+    <div class="logo"><img src="img/logo 2.png"></div>
+    
+
+    <!-- DUPLICATE SAME LOGOS AGAIN -->
+    <!-- IMPORTANT for seamless infinite scroll -->
+     <div class="logo"><img src="./img/11.png"></div>
+    <div class="logo"><img src="./img/12.png"></div>
+    <div class="logo"><img src="./img/14.png"></div>
+    <div class="logo"><img src="./img/15.png"></div>
+    <div class="logo"><img src="./img/16.png"></div>
+    <div class="logo"><img src="./img/17.png"></div>
+    <div class="logo"><img src="./img/18.png"></div>
+    <div class="logo"><img src="./img/20.png"></div>
+    <div class="logo"><img src="./img/22.png"></div>
+    <div class="logo"><img src="./img/23.png"></div>
+    <div class="logo"><img src="./img/24.png"></div>
+    <div class="logo"><img src="./img/25.png"></div>
+    <div class="logo"><img src="./img/26.png"></div>
+    <div class="logo"><img src="./img/27.png"></div>
+    <div class="logo"><img src="./img/28.png"></div>
+    <div class="logo"><img src="./img/29.png"></div>
+    <div class="logo"><img src="./img/30.png"></div>
+    <div class="logo"><img src="./img/31.png"></div>
+    <div class="logo"><img src="img/logo 2.png"></div>
+
+  </div>
+</div>
+
+
+
+    <!-- <h2 style="text-align: center; margin-top: 50px">Our Clients</h2>
 
     <div class="slider123">
       <div class="new-slide-track">
@@ -1128,9 +1278,9 @@
         <div class="new-slide">
           <img src="img/dr.logo5.png" alt="">
         </div>
-        <!-- Add other slides here with the new class name -->
+         Add other slides here with the new class name
       </div>
-    </div>
+    </div> -->
 
     <!-- Testimonial Start -->
     <!-- <div class="container-xxl py-5">
@@ -1205,7 +1355,7 @@
             <p class="mb-2">
               <i class="fa fa-map-marker-alt me-3"></i>
 
-              Down Hill, Malappuram , Kerala
+               Malappuram , Kerala
             </p>
             <p class="mb-2">
               <i class="fa fa-phone-alt me-3"></i>+91 6282414031
@@ -1410,7 +1560,7 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
             <!-- Text center alignment -->
             &copy;
             <a class="border-bottom" href="#">
-              2025. Design by Tecnavis Web Solutions Pvt Ltd</a
+              2026. Design by Tecnavis Web Solutions Pvt Ltd</a
             >, All Right Reserved.
           </div>
           <!--  -->
